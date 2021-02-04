@@ -11,7 +11,8 @@ import io.cucumber.junit.CucumberOptions;
 glue= {"StepDefinition"},//This is to run step files
 monochrome=true, //to make console output in a better format
 dryRun=false,//to check all methods have been implemented properly
-strict=true)//to check if i missed any steps in step definition
+strict=true, //to check if i missed any steps in step definition
+plugin= {"html:testoutput/testoutput.html","junit:testoutput/cucumber.xml","json:testoutput/cucumber.json"})
 public class TestRunner {
 
 }
