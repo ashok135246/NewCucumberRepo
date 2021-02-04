@@ -35,7 +35,7 @@ public class Steps {
 	public void login_successful() throws InterruptedException {
 		Thread.sleep(2000);
 		String expected=driver.findElement(By.id("welcome")).getText();
-		String Actual="Welcome Nauman";		
+		String Actual="Welcome Paul";		
 		Assert.assertEquals(expected,Actual);
 		Thread.sleep(2000);
 		driver.findElement(By.id("welcome")).click();
